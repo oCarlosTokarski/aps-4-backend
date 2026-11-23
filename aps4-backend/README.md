@@ -38,6 +38,19 @@ pip install -r requirements.txt
 
 # 🔑 Configuração da chave secreta (.env)
 
+crie um arquivo .env com esse codigo abaixo:
+# Gere uma com: python -c "import secrets; print(secrets.token_hex(32))"
+SECRET_KEY=troque-por-uma-chave-gerada
+
+
+TOKEN_EXPIRACAO_MINUTOS=30
+
+
+ADMIN_NOME=Administrador <br>
+ADMIN_EMAIL=admin@exemplo.com<br>
+ADMIN_SENHA=12345678
+
+
 A chave usada para assinar os tokens JWT **não fica no código**. Ela é lida do arquivo `.env`.
 
 1. Copie o arquivo de exemplo:
